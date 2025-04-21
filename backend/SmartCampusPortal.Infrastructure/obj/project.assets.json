@@ -1,0 +1,90 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "SmartCampusPortal.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/SmartCampusPortal.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SmartCampusPortal.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SmartCampusPortal.Domain/1.0.0": {
+      "type": "project",
+      "path": "../SmartCampusPortal.Domain/SmartCampusPortal.Domain.csproj",
+      "msbuildProject": "../SmartCampusPortal.Domain/SmartCampusPortal.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "SmartCampusPortal.Domain >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/SKHUMALO/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Infrastructure/SmartCampusPortal.Infrastructure.csproj",
+      "projectName": "SmartCampusPortal.Infrastructure",
+      "projectPath": "/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Infrastructure/SmartCampusPortal.Infrastructure.csproj",
+      "packagesPath": "/Users/SKHUMALO/.nuget/packages/",
+      "outputPath": "/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Infrastructure/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/SKHUMALO/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "/usr/local/share/dotnet/library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {
+            "/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Domain/SmartCampusPortal.Domain.csproj": {
+              "projectPath": "/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Domain/SmartCampusPortal.Domain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.317/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
