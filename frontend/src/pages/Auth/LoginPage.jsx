@@ -1,9 +1,59 @@
-// src/pages/Auth/LoginPage.jsx
-import React from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../../context/AuthContext';
 import { Link } from 'react-router-dom';
 import { FcGoogle } from 'react-icons/fc';
 
+
 const LoginPage = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+
+  const { login } = useAuth();
+  const navigate = useNavigate();
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+
+    try {
+      // Simulate API call
+      const response = await fetch('http://localhost:5139/api/auth/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password }),
+      });
+
+      const result = await response.json();
+
+      if (result.isValid) {
+        const { token, role } = result.data;
+        login({ token, role });
+
+        // Role-based redirect
+        switch (role) {
+          case 'Admin':
+            navigate('/admin/dashboard');
+            break;
+          case 'Lecturer':
+            navigate('/lecturer/dashboard');
+            break;
+          case 'Student':
+            navigate('/student/dashboard');
+            break;
+          default:
+            navigate('/login');
+            break;
+        }
+      } else {
+        setError('Invalid credentials.');
+      }
+    } catch (err) {
+      console.error('Login error:', err);
+      setError('Something went wrong. Please try again.');
+    }
+  };
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-mint-50 px-4">
       <div className="flex w-full max-w-5xl rounded-3xl overflow-hidden shadow-lg bg-white">
@@ -28,12 +78,19 @@ const LoginPage = () => {
         <div className="w-1/2 p-10 bg-white flex flex-col justify-center">
           <h1 className="text-2xl font-bold text-center mb-6 text-gray-800">Sign in</h1>
 
-          <form className="space-y-4">
+          <form className="space-y-4" onSubmit={handleLogin}>
+            {error && (
+              <div className="text-red-600 text-sm text-center">{error}</div>
+            )}
+
             <div>
               <label className="text-sm text-gray-600 block mb-1">Username or email</label>
               <input
                 type="email"
                 placeholder="studentNo@tut4life.ac.za"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-mint-500"
               />
             </div>
@@ -42,6 +99,9 @@ const LoginPage = () => {
               <input
                 type="password"
                 placeholder="••••••••"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-mint-500"
               />
             </div>

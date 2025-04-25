@@ -1,0 +1,16 @@
+/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Application/bin/Debug/net8.0/SmartCampusPortal.Application.deps.json
+/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Application/bin/Debug/net8.0/SmartCampusPortal.Application.dll
+/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Application/bin/Debug/net8.0/SmartCampusPortal.Application.pdb
+/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Application/bin/Debug/net8.0/SmartCampusPortal.Domain.dll
+/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Application/bin/Debug/net8.0/SmartCampusPortal.Domain.pdb
+/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Application/obj/Debug/net8.0/SmartCampusPortal.Application.csproj.AssemblyReference.cache
+/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Application/obj/Debug/net8.0/SmartCampusPortal.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Application/obj/Debug/net8.0/SmartCampusPortal.Application.AssemblyInfoInputs.cache
+/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Application/obj/Debug/net8.0/SmartCampusPortal.Application.AssemblyInfo.cs
+/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Application/obj/Debug/net8.0/SmartCampusPortal.Application.csproj.CoreCompileInputs.cache
+/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Application/obj/Debug/net8.0/SmartCampusPortal.Application.sourcelink.json
+/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Application/obj/Debug/net8.0/SmartCam.F5CBA25C.Up2Date
+/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Application/obj/Debug/net8.0/SmartCampusPortal.Application.dll
+/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Application/obj/Debug/net8.0/refint/SmartCampusPortal.Application.dll
+/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Application/obj/Debug/net8.0/SmartCampusPortal.Application.pdb
+/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Application/obj/Debug/net8.0/ref/SmartCampusPortal.Application.dll
