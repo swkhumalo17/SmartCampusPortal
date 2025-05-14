@@ -1,0 +1,5 @@
+/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Infrastructure/obj/Debug/net7.0/SmartCampusPortal.Infrastructure.csproj.AssemblyReference.cache
+/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Infrastructure/obj/Debug/net7.0/SmartCampusPortal.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Infrastructure/obj/Debug/net7.0/SmartCampusPortal.Infrastructure.AssemblyInfoInputs.cache
+/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Infrastructure/obj/Debug/net7.0/SmartCampusPortal.Infrastructure.AssemblyInfo.cs
+/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Infrastructure/obj/Debug/net7.0/SmartCampusPortal.Infrastructure.csproj.CoreCompileInputs.cache

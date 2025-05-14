@@ -1,0 +1,12 @@
+/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Domain/bin/Debug/net7.0/SmartCampusPortal.Domain.deps.json
+/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Domain/bin/Debug/net7.0/SmartCampusPortal.Domain.dll
+/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Domain/bin/Debug/net7.0/SmartCampusPortal.Domain.pdb
+/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Domain/obj/Debug/net7.0/SmartCampusPortal.Domain.csproj.AssemblyReference.cache
+/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Domain/obj/Debug/net7.0/SmartCampusPortal.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Domain/obj/Debug/net7.0/SmartCampusPortal.Domain.AssemblyInfoInputs.cache
+/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Domain/obj/Debug/net7.0/SmartCampusPortal.Domain.AssemblyInfo.cs
+/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Domain/obj/Debug/net7.0/SmartCampusPortal.Domain.csproj.CoreCompileInputs.cache
+/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Domain/obj/Debug/net7.0/SmartCampusPortal.Domain.dll
+/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Domain/obj/Debug/net7.0/refint/SmartCampusPortal.Domain.dll
+/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Domain/obj/Debug/net7.0/SmartCampusPortal.Domain.pdb
+/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Domain/obj/Debug/net7.0/ref/SmartCampusPortal.Domain.dll
