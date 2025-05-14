@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SmartCampusPortal.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca597b560a70e959454ca3620d42bcd2bc4a7318")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac75ff01b51dfeee20ffe66f4117ad6884b01b92")]
 [assembly: System.Reflection.AssemblyProductAttribute("SmartCampusPortal.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SmartCampusPortal.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

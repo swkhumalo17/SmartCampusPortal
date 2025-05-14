@@ -3,9 +3,9 @@ namespace SmartCampusPortal.Domain.Entities
 {
 	public enum UserRole
 	{
-		Student,
-		Lecturer,
-		Admin
+		Student = 0,
+		Lecturer = 1,
+		Admin = 2
 	}
 
     public class User

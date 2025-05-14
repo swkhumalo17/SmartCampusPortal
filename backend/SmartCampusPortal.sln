@@ -11,6 +11,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCampusPortal.Domain", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCampusPortal.Infrastructure", "SmartCampusPortal.Infrastructure\SmartCampusPortal.Infrastructure.csproj", "{B1BC8E2B-BEAE-400C-8056-9BB1A2E8795D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCampusPortal.Tests", "SmartCampusPortal.Tests\SmartCampusPortal.Tests.csproj", "{042D4901-6320-4C5B-8AFA-A11B3DC4D1E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "wwwroot", "wwwroot", "{43BE547A-3635-4AF4-8B5A-41832C9DFD74}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "swagger-ui", "swagger-ui", "{52CE52D0-A91E-4AC3-B9BC-1C4FE04EA589}"
+	ProjectSection(SolutionItems) = preProject
+		auth-token.js = auth-token.js
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +45,12 @@ Global
 		{B1BC8E2B-BEAE-400C-8056-9BB1A2E8795D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1BC8E2B-BEAE-400C-8056-9BB1A2E8795D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1BC8E2B-BEAE-400C-8056-9BB1A2E8795D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{042D4901-6320-4C5B-8AFA-A11B3DC4D1E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{042D4901-6320-4C5B-8AFA-A11B3DC4D1E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{042D4901-6320-4C5B-8AFA-A11B3DC4D1E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{042D4901-6320-4C5B-8AFA-A11B3DC4D1E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{52CE52D0-A91E-4AC3-B9BC-1C4FE04EA589} = {43BE547A-3635-4AF4-8B5A-41832C9DFD74}
 	EndGlobalSection
 EndGlobal

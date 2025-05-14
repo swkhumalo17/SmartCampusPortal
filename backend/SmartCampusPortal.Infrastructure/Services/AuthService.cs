@@ -110,18 +110,20 @@ namespace SmartCampusPortal.Infrastructure.Services
             // Generate JWT Token
             var token = GenerateToken(user); // Helper method that generates the token
 
-            response.IsValid = true;
-            response.StatusCode = 200;
+            // Include additional data in the response
             response.Data = new
             {
                 token,
-                role = user.Role.ToString()
+                role = user.Role.ToString(),
+                fullName = $"{user.FirstName} {user.LastName}",
+                levelOfStudy = user.Role == UserRole.Student ? user.LevelOfStudy : null
             };
+            response.IsValid = true;
+            response.StatusCode = 200;
             response.Messages.Add("Login successful.");
 
             return response;
         }
-
 
         private string GenerateToken(User user)
         {
@@ -130,7 +132,8 @@ namespace SmartCampusPortal.Infrastructure.Services
 
             var claims = new[]
             {
-                new Claim(ClaimTypes.Name, $"{user.FirstName} {user.LastName}"),
+                new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString()),
+                new Claim(ClaimTypes.Name, user.FirstName.ToString()),
                 new Claim(ClaimTypes.Email, user.Email),
                 new Claim(ClaimTypes.Role, user.Role.ToString())
             };
@@ -139,12 +142,14 @@ namespace SmartCampusPortal.Infrastructure.Services
                 issuer: _config["Jwt:Issuer"],
                 audience: _config["Jwt:Audience"],
                 claims: claims,
-                expires: DateTime.Now.AddHours(6),
+                expires: DateTime.UtcNow.AddHours(6),
                 signingCredentials: creds
             );
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
+
+
     }
 }
 

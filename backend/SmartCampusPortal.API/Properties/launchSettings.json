@@ -20,7 +20,7 @@
     "SmartCampusPortal.Api": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "https://localhost:18291;http://localhost:63960",
+      "applicationUrl": "http://localhost:28209",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },

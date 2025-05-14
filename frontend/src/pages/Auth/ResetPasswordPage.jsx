@@ -1,104 +1,94 @@
 import React, { useState } from 'react';
-import { useSearchParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
+import API_ENDPOINTS from '../apiEndpoints'; // 👈 Import API endpoints
 
 const ResetPasswordPage = () => {
-  const [searchParams] = useSearchParams();
-  const token = searchParams.get('token');
+  const { token } = useParams();
+  const navigate = useNavigate();
 
   const [newPassword, setNewPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+  const [status, setStatus] = useState('');
   const [error, setError] = useState('');
-  const [message, setMessage] = useState('');
-  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
-    setMessage('');
+    setStatus('');
 
     if (newPassword !== confirmPassword) {
-      return setError("Passwords do not match");
+      setError("Passwords do not match.");
+      return;
     }
 
     try {
-      const response = await fetch('http://localhost:5000/api/auth/reset-password', {
+      const response = await fetch(`${API_ENDPOINTS.RESET_PASSWORD}`, {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ token, password: newPassword }),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ token, newPassword }),
       });
 
-      const data = await response.json();
-
       if (!response.ok) {
+        const data = await response.json();
         throw new Error(data.message || 'Password reset failed');
       }
 
-      setMessage('Password has been reset successfully!');
-      setTimeout(() => navigate('/login'), 3000); // Redirect to login
+      setStatus('Password has been successfully reset.');
+      setTimeout(() => navigate('/login'), 2000);
     } catch (err) {
       setError(err.message);
     }
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-mint-50 px-4">
+    <div className="min-h-screen flex items-center justify-center bg-[#f0f9ff] px-4">
       <div className="flex w-full max-w-5xl rounded-3xl overflow-hidden shadow-lg bg-white">
-        
-        {/* Left Panel */}
-        <div className="w-1/2 bg-mint-100 p-10 flex flex-col justify-center items-center">
-          <img
-            src="/reset-password.png"
-            alt="Reset Password Illustration"
-            className="w-full max-w-sm mb-10"
-          />
+        {/* Left */}
+        <div className="w-1/2 bg-[#e0f2fe] p-10 flex flex-col justify-center items-center">
+          <img src="/ResetPassword.png" alt="Reset Password" className="w-full max-w-sm mb-10" />
           <div className="text-center">
-            <h2 className="text-2xl font-semibold text-gray-800">Reset Your Password</h2>
-            <p className="text-sm text-gray-600 mt-2">
-              Enter a new password and confirm it to complete the reset.
-            </p>
+            <h2 className="text-2xl font-semibold text-gray-800">Set a New Password</h2>
+            <p className="text-sm text-gray-600 mt-2">Make sure it's strong and secure.</p>
           </div>
         </div>
 
-        {/* Right Panel */}
-        <div className="w-1/2 p-10 bg-white flex flex-col justify-center">
-          <h1 className="text-2xl font-bold text-center mb-6 text-gray-800">New Password</h1>
+        {/* Right */}
+        <div className="w-1/2 p-10 flex flex-col justify-center bg-white">
+          <h1 className="text-2xl font-bold text-center mb-6">Reset Password</h1>
 
           <form className="space-y-4" onSubmit={handleSubmit}>
-            {error && <div className="text-red-600 text-sm text-center">{error}</div>}
-            {message && <div className="text-green-600 text-sm text-center">{message}</div>}
-
             <div>
-              <label className="text-sm text-gray-600 block mb-1">New Password</label>
+              <label htmlFor="newPassword" className="label">New Password</label>
               <input
+                id="newPassword"
                 type="password"
-                placeholder="Enter new password"
+                className="input-field"
+                placeholder="Enter your new password"
                 value={newPassword}
                 onChange={(e) => setNewPassword(e.target.value)}
-                required
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-mint-500"
               />
             </div>
 
             <div>
-              <label className="text-sm text-gray-600 block mb-1">Confirm Password</label>
+              <label htmlFor="confirmPassword" className="label">Confirm Password</label>
               <input
+                id="confirmPassword"
                 type="password"
-                placeholder="Re-enter password"
+                className="input-field"
+                placeholder="Confirm your new password"
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
-                required
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-mint-500"
               />
             </div>
 
-            <button
-              type="submit"
-              className="w-full bg-gray-900 text-white py-2 rounded-md hover:bg-gray-800 transition"
-            >
-              Reset Password
-            </button>
+            {status && <p className="text-sm text-green-600 mt-1">{status}</p>}
+            {error && <p className="text-sm text-red-500 mt-1">{error}</p>}
+
+            <button type="submit" className="btn-primary mt-4">Reset Password</button>
+
+            <div className="text-sm text-center mt-4">
+              <Link to="/login" className="link">Back to Login</Link>
+            </div>
           </form>
         </div>
       </div>

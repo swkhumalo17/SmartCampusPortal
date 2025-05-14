@@ -10,10 +10,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("4a4fd7f2-3e99-4f1a-94b1-fb9396af65cb")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("SmartCampusPortal.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca597b560a70e959454ca3620d42bcd2bc4a7318")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac75ff01b51dfeee20ffe66f4117ad6884b01b92")]
 [assembly: System.Reflection.AssemblyProductAttribute("SmartCampusPortal.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SmartCampusPortal.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

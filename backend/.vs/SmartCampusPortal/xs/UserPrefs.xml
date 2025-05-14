@@ -1,34 +1,51 @@
-﻿<Properties StartupConfiguration="{FCF996DA-26B1-4698-8DC9-D0B3636DDE3A}|https">
+﻿<Properties StartupConfiguration="{FCF996DA-26B1-4698-8DC9-D0B3636DDE3A}|SmartCampusPortal.Api">
   <MonoDevelop.Ide.Workbench ActiveDocument="SmartCampusPortal.API/Program.cs">
     <Files>
-      <File FileName="SmartCampusPortal.Domain/Entities/User.cs" Line="23" Column="1" />
-      <File FileName="SmartCampusPortal.Application/DTOs/UserLoginDto.cs" Line="12" Column="12" />
-      <File FileName="SmartCampusPortal.Application/DTOs/UserRegisterDto.cs" Line="17" Column="1" />
-      <File FileName="SmartCampusPortal.Application/Interfaces/IAuthService.cs" Line="13" Column="1" />
-      <File FileName="SmartCampusPortal.Infrastructure/Services/AuthService.cs" Line="76" Column="30" />
-      <File FileName="SmartCampusPortal.Infrastructure/Persistence/AppDbContext.cs" Line="11" Column="3" />
-      <File FileName="SmartCampusPortal.API/Program.cs" Line="35" Column="33" />
-      <File FileName="SmartCampusPortal.API/Controllers/AuthController.cs" Line="24" Column="14" />
-      <File FileName="SmartCampusPortal.API/appsettings.json" Line="6" Column="9" />
+      <File FileName="SmartCampusPortal.Domain/Entities/Booking.cs" />
+      <File FileName="SmartCampusPortal.Application/DTOs/BookingDto.cs" />
+      <File FileName="SmartCampusPortal.Application/Interfaces/IBookingService.cs" />
+      <File FileName="SmartCampusPortal.Infrastructure/Persistence/AppDbContext.cs" />
+      <File FileName="SmartCampusPortal.Infrastructure/Services/BookingService.cs" />
+      <File FileName="SmartCampusPortal.Infrastructure/Services/TimetableService.cs" />
+      <File FileName="SmartCampusPortal.API/Controllers/BookingController.cs" Line="54" Column="16" />
+      <File FileName="SmartCampusPortal.Application/DTOs/AvailableRoomDto.cs" />
+      <File FileName="SmartCampusPortal.API/Controllers/TimetableController.cs" />
+      <File FileName="SmartCampusPortal.Application/DTOs/ApiResponse.cs" />
+      <File FileName="SmartCampusPortal.API/Program.cs" Line="111" Column="22" />
+      <File FileName="SmartCampusPortal.API/Controllers/AuthController.cs" />
+      <File FileName="SmartCampusPortal.Infrastructure/Seeders/TimetableSeeder.cs" />
+      <File FileName="SmartCampusPortal.Application/Interfaces/IAuthService.cs" />
+      <File FileName="SmartCampusPortal.Infrastructure/Services/AuthService.cs" />
+      <File FileName="SmartCampusPortal.Application/DTOs/UserLoginDto.cs" />
+      <File FileName="SmartCampusPortal.Domain/Entities/User.cs" />
+      <File FileName="SmartCampusPortal.Domain/Entities/Timetable.cs" />
+      <File FileName="SmartCampusPortal.API/appsettings.json" />
+      <File FileName="SmartCampusPortal.Tests/BookingControllerTests.cs" />
+      <File FileName="SmartCampusPortal.Application/DTOs/UserRegisterDto.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="SmartCampusPortal" expanded="True">
-            <Node name="SmartCampusPortal.API">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Program.cs" selected="True" />
-            </Node>
+            <Node name="wwwroot" selected="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.SmartCampusPortal.API PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.API/Controllers/BookingController.cs" relfile="SmartCampusPortal.API/Controllers/BookingController.cs" line="34" column="1" />
+      <Breakpoint file="/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Infrastructure/Services/BookingService.cs" relfile="SmartCampusPortal.Infrastructure/Services/BookingService.cs" line="41" column="1" />
+      <Breakpoint file="/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Infrastructure/Services/BookingService.cs" relfile="SmartCampusPortal.Infrastructure/Services/BookingService.cs" line="99" column="1" />
+      <Breakpoint file="/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.Infrastructure/Services/BookingService.cs" relfile="SmartCampusPortal.Infrastructure/Services/BookingService.cs" line="100" column="1" />
+      <Breakpoint file="/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.API/Controllers/BookingController.cs" relfile="SmartCampusPortal.API/Controllers/BookingController.cs" line="16" column="1" />
+      <Breakpoint file="/Users/SKHUMALO/Documents/SmartCampusPortal/backend/SmartCampusPortal.API/Controllers/BookingController.cs" relfile="SmartCampusPortal.API/Controllers/BookingController.cs" line="62" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.SmartCampusPortal.Tests PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
